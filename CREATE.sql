@@ -21,7 +21,8 @@ CREATE TABLE motorista (
     id_motorista INT PRIMARY KEY,
     cpf_motorista BIGINT NOT NULL,
     cnh_motorista BIGINT NOT NULL,
-    foto_motorista VARCHAR(255)
+    foto_motorista VARCHAR(255),
+    FOREIGN KEY (id_motorista) REFERENCES usuario(id_usuario)
 );
 
 CREATE TABLE onibus (
